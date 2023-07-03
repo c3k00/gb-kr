@@ -19,3 +19,26 @@ string[] arrayFinal = new string[size];
 int len = 3;
 int pos = 0;
 Console.WriteLine($"Начальный массив: [{string.Join(", ", arrayStrings)}]");
+
+for (int j = 0; j < size; j++)
+{
+    if (arrayStrings[j].Length <= len)
+    {
+        arrayFinal[pos] = arrayStrings[j];
+        pos++;
+    }
+}
+
+void PrintArray(string[] array)
+{
+    // Console.Write("Конечный массив: [");
+    for (int i = 0; i < array.Length; i++)
+    {
+        // Console.Write(array[i] + ",");
+    }
+    // Console.WriteLine("Конечный массив: " + '[' + string.Join(", ", array) + ']');
+    Console.WriteLine($"Конечный массив: [{string.Join(", ", array)}]");
+
+    // Console.Write("]");
+    // Console.WriteLine();
+}
