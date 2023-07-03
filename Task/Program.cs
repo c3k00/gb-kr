@@ -4,6 +4,7 @@
 // либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, 
 // лучше обойтись исключительно массивами.
 
+Console.Clear();
 Console.Write("Сколько элементов Вы хотите ввести? ");
 int size = Convert.ToInt32(Console.ReadLine());
 
@@ -31,7 +32,6 @@ for (int j = 0; j < size; j++)
 
 void PrintArray(string[] array)
 {
-    // Console.Write("Конечный массив: [");
     for (int i = 0; i < array.Length; i++)
     {
         // Console.Write(array[i] + ",");
@@ -42,3 +42,6 @@ void PrintArray(string[] array)
     // Console.Write("]");
     // Console.WriteLine();
 }
+
+Console.WriteLine();
+PrintArray(arrayFinal);
